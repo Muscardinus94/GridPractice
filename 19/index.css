@@ -1,0 +1,42 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  background-color: khaki;
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "content . lnb"
+    "footer footer footer";
+  grid-template-columns: auto auto auto;
+}
+
+.parent div {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.lnb {
+  grid-area: lnb;
+}
+
+.footer {
+  grid-area: footer;
+}

@@ -1,0 +1,27 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  background-color: khaki;
+  display: grid;
+  grid-template-areas: "item item . . ." "item item . . .";
+}
+
+.parent div {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 15px;
+}
+
+.item {
+  background-color: crimson;
+  grid-area: item;
+}

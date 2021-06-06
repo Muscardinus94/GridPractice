@@ -1,0 +1,30 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  display: grid;
+}
+
+.parent div {
+  border: 1px solid red;
+  text-align: center;
+  padding: 10px;
+}
+
+.item1 {
+  background-color: crimson;
+  grid-row: 2;
+}
+
+.item2 {
+  background-color: yellowgreen;
+  grid-row: 4;
+}

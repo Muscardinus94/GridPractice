@@ -1,0 +1,52 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  width: 700px;
+  height: 700px;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.item {
+  background-color: skyblue;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.item div {
+  background-color: crimson;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.item.one div {
+  justify-self: start;
+  align-self: start;
+}
+
+.item.nine div {
+  justify-self: stretch;
+  align-self: stretch;
+  width: auto;
+  height: auto;
+}

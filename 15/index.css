@@ -1,0 +1,36 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  background-color: skyblue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.parent div {
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.parent div:nth-child(6) {
+  order: 1;
+}
+
+.parent div:nth-child(5) {
+  order: 2;
+}
+
+.parent div:nth-child(4) {
+  order: -1;
+}

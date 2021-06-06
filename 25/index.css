@@ -1,0 +1,25 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  background-color: skyblue;
+  display: grid;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  grid-template-columns: min-content 1fr 1fr;
+}
+
+.parent div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 1px solid #000;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.parent div {
+  font-size: 30px;
+  background-color: deepskyblue;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.item {
+  background-color: crimson !important;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  /*grid-column: 1 / 3;*/
+  /*grid-column: 1 / span 2;*/
+}

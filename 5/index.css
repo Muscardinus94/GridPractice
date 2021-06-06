@@ -1,0 +1,60 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/*.parent {*/
+/*  border: 5px solid #000;*/
+/*  display: grid;*/
+/*  grid-template-columns: auto auto;*/
+/*  justify-items: center;*/
+/*}*/
+
+/*.parent div {*/
+/*  background-color: darkkhaki;*/
+/*  font-size: 30px;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*  text-align: center;*/
+/*  color: #fff;*/
+/*}*/
+
+/*.parent {*/
+/*  border: 5px solid #000;*/
+/*  display: grid;*/
+/*  height: 300px;*/
+/*  grid-template-columns: auto auto;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.parent div {*/
+/*  background-color: darkkhaki;*/
+/*  font-size: 30px;*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*  text-align: center;*/
+/*  color: #fff;*/
+/*}*/
+
+.parent {
+  border: 5px solid #000;
+  display: grid;
+  height: 300px;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.parent div {
+  background-color: darkkhaki;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: #fff;
+}

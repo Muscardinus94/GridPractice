@@ -1,0 +1,40 @@
+body {
+  color: #222;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.parent {
+  border: 5px solid #000;
+  width: 600px;
+  padding: 10px;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.parent div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.child3 {
+  grid-column: 1 / 3;
+}
+
+@media (max-width: 768px) {
+  .parent {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .child3 {
+    grid-column: 1;
+  }
+}
