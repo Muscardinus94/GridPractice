@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 100px 1fr 100px;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.container > div {
+  background-color: skyblue;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  grid-column: 1 / span 3;
+}
+
+.menu {
+  grid-row: 2 / 4;
+}
+
+.main {
+}
+
+.aside {
+}
+
+.footer {
+  grid-column: 2 / span 2;
+}
