@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  line-height: 1.6em;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-rows: 300px calc(100vh - 600px) 300px;
+}
+
+.story {
+  display: grid;
+  align-content: center;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.items div {
+}
+
+.items.top div:nth-child(1) {
+  background: url(images/project-image-01.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.top div:nth-child(2) {
+  background: url(images/project-image-02.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.top div:nth-child(3) {
+  background: url(images/project-image-03.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.top div:nth-child(4) {
+  background: url(images/project-image-04.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.top div:nth-child(5) {
+  background: url(images/project-image-05.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.bottom div:nth-child(1) {
+  background: url(images/project-image-06.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.bottom div:nth-child(2) {
+  background: url(images/project-image-07.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.bottom div:nth-child(3) {
+  background: url(images/project-image-08.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.bottom div:nth-child(4) {
+  background: url(images/project-image-09.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.items.bottom div:nth-child(5) {
+  background: url(images/project-image-10.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .project-gallery {
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
+  }
+
+  .story {
+    grid-row: 1;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    grid-gap: 10px;
+  }
+
+  .story h1 {
+    line-height: 1.3em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-gallery {
+    grid-template-rows: 1fr 150px 150px;
+    padding: 15px;
+  }
+
+  .story {
+    grid-row: 1;
+  }
+
+  .items {
+    height: 150px;
+  }
+
+  .items.bottom {
+    margin-top: 5px;
+  }
+}
